@@ -6,10 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首页</title>
   <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="../css/index.css">
+
+
 </head>
 <body>
-  <div class="header">
+  <div id="nav">
     <div class="container nav_top">
       <ul>
         <li>喵，欢迎天猫</li>
@@ -34,13 +37,13 @@
         <li><a href="">商家支持</a></li>
         <li>
           <a href="">网站导航</a>
-          </div>
        </li>
       </ol>
     </div>
-    <div class="mue-bd">
+    <!-- nav隐藏导航没完成 -->
+    <div id="mue-bd" class="container">
      <ul class="clear">
-       <li><p>选项1</p>
+       <li><h2>选项1</h2>
       <ol>
         <li>1</li>
         <li>2</li>
@@ -59,15 +62,57 @@
         <li>15</li>
       </ol>
     </li>
-       <li><p>选项2</p></li>
-       <li><p>选项3</p></li>
+       <li><h2>选项2</h2></li>
+       <li><h2>选项3</h2></li>
      </ul>
 
 
   </div>
-  
-
+  <div id="header">
+    <div class="headerLayout">
+      <div class="search" class="clear">
+        <input type="text" value="搜索 天猫 商品/品牌/店铺">
+        <button>搜索</button>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <!-- 中心导航 -->
+    <div class="main-nav">
+      <div class="nav1">
+        <div class="nav1-1 clear">
+          <a href=""><img src="../images/tmcs.png" alt="天猫超市"><div></div></a>
+          <a href=""><img src="../images/tmgj.png" alt="天猫国际"><div></div></a>
+          <a href="">天猫会员</a>
+          <a href="">电器城</a>
+          <a href="">喵鲜生</a>
+          <a href="">医药馆</a>
+          <a href="">营业厅</a>
+          <a href="">魅力惠</a>
+          <a href="">飞猪旅行</a>
+          <a href="">苏宁易购</a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 背景 -->
+    <div class="backg">
+       <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../images/O1CN01LpEV241CUyFaWkiO6_!!85-0-luban.jpg_q100.jpg_.webp" alt=""></div>
+      <div class="swiper-slide"><img src="../images/O1CN01vaROVy1BvFMDbnYHD_!!7-0-luban.jpg_q100.jpg_.webp" alt=""></div>
+      <div class="swiper-slide"><img src="../images/O1CN01Z6PRkN1D8MJT7OkzR_!!171-0-luban.jpg_q100.jpg_.webp" alt=""></div>
+      <div class="swiper-slide"><img src="../images/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../images/TB1IubVoEz1gK0jSZLeSuv9kVXa.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../images/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg" alt=""></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  </div>
   <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script src="../lib/swiper/js/swiper.min.js"></script>
   <script src="../js/index.js"></script>
 </body>
 </html>
